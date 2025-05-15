@@ -13,8 +13,8 @@ class CardPresentation extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          width: 200,
-          height: 200,
+          width: 150,
+          height: 150,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             boxShadow: const[
@@ -25,7 +25,7 @@ class CardPresentation extends StatelessWidget {
               ),
             ],
             image: const DecorationImage(
-              image: AssetImage('assets/imagen.png'),
+              image: AssetImage('lib/assets/imagen.png'),
               fit: BoxFit.cover
             )
           ),
