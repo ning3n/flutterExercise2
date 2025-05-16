@@ -12,25 +12,39 @@ class CardPresentation extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Container(
-          width: 150,
-          height: 150,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: const[
-              BoxShadow(
-                color: Colors.black26,
-                blurRadius: 10,
-                offset: Offset(0, 4),
-              ),
-            ],
-            image: const DecorationImage(
-              image: AssetImage('lib/assets/imagen.png'),
-              fit: BoxFit.cover
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Container(
+                  width: 150,
+                  height: 150,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const[
+                      BoxShadow(
+                        color: Colors.black26,
+                        blurRadius: 10,
+                        offset: Offset(0, 4),
+                      ),
+                    ],
+                    image: const DecorationImage(
+                      image: AssetImage('lib/assets/imagen.png'),
+                      fit: BoxFit.cover
+                    )
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Text("Trying something different"),
+              ],
             )
-          ),
+          ],
         ),
       ),
+      
     );
   }
 }
